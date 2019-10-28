@@ -8,14 +8,41 @@ body {
   background: transparent;
 }
 h1 {
-  color: white;
+  color: black;
   font-size: 80px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 80%;
   padding: 50px;
+
+  box-shadow: 3px 3px 10px 3px black;
 }
 p {
-  color: white;
+  color: black;
   font-size: 30px;
+  /* font-weight: 50px; */
+}
+.content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  /* font-weight: 200px; */
+  padding: 40px;
+  border-radius: 15%;
+  box-shadow: 3px 3px 10px 3px black;
+}
+
+.fcontent {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 30px;
+  padding: 30px;
+  border-radius: 15%;
+  box-shadow: 3px 3px 10px 3px black;
+}
+
+#day,
+#month,
+#year {
+  border-radius: 30px;
+  text-align: center;
 }

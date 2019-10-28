@@ -17,6 +17,9 @@
     />
   </head>
   <body>
+    <!-- <script type="text/javascript" src="app.js"></script>
+    <script id="particles-js"></script>
+    <script type="text/javascript" src="particles.js"></script> -->
     <div class="container">
       <div class="jumbotron">
         <h1>Akan Names Generator</h1>
@@ -25,42 +28,70 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <p>
-            In Ghana, children are given their first name as a 'day name', after
-            the day of the week they were born.These names are called the Akan
-            Names.
-          </p>
-          <p>
-            This application is to help you know the day of the week you were
-            born and your Akan Name corresponding to your day and your gender.
-          </p>
-          <p>
-            Fill the information about your date of birth and gender in the form
-            to know your Akan Name:
-          </p>
+          <div class="content">
+            <p>
+              In Ghana, children are given their first name as a 'day name',
+              after the day of the week they were born.These names are called
+              the Akan Names.
+            </p>
+            <p>
+              This application helps you know the day of the week that you were
+              born and your Akan Name according to your birth day and your
+              gender.
+            </p>
+            <p>
+              Enter your date of birth and gender in the form to know your Akan
+              Name in seconds.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form">
-          <label>Day</label><br />
-          <input type="text" id="day" placeholder="dd" required /><br />
-          <label>Month</label><br />
-          <input type="text" id="month" placeholder="mm" required /><br />
-          <label>Year</label><br />
-          <input type="text" id="year" placeholder="yy" required /><br />
-          <label>Gender</label><br />
-          <input type="radio" name="gender" id="gender" value="male" checked />
-          Male<br />
-          <input
-            type="radio"
-            name="gender"
-            id="gender"
-            value="female"
-            checked
-          />
-          Female<br /><br />
+
+        <div class="col-md-6">
+          <div class="fcontent">
+            <div class="form">
+              <label>Day</label><br />
+              <input type="text" id="day" placeholder="dd" required /><br />
+              <label>Month</label><br />
+              <input type="text" id="month" placeholder="mm" required /><br />
+              <label>Year</label><br />
+              <input type="text" id="year" placeholder="yy" required /><br />
+              <label>Gender</label><br />
+              <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="male"
+                checked
+              />
+              Male<br />
+              <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="female"
+                checked
+              />
+              Female<br /><br />
+            </div>
+            <div class="sbmt">
+              <a href="#result"
+                ><button
+                  type="button"
+                  name="button"
+                  class="btn btn-primary mb-2"
+                  onclick="submition();"
+                >
+                  Submit
+                </button></a
+              >
+              <div id="last">
+                <p id="show"></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
