@@ -8,15 +8,22 @@ This is a landing page for Akan name generator
 
 ### Application Descrption
 
+- - -
+
 ### Akan Name Form
-
-### Generate Akan Names according to day of the week
-
-## Description
 
 - - -
 
+### Generate Akan Names according to day of the week
+
+- - -
+
+## Description
+
+
 This website application that generates Akan names according to the birthdate by filing a form.
+
+- - -
 
 ### Technologies
 
