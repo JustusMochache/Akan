@@ -24,7 +24,7 @@ p {
 }
 .content {
   text-align: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 0, 0, 0.2);
   /* font-weight: 200px; */
   padding: 40px;
   border-radius: 15%;
@@ -33,7 +33,7 @@ p {
 
 .fcontent {
   text-align: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 0, 0, 0.2);
   font-size: 30px;
   padding: 30px;
   border-radius: 15%;

@@ -1,52 +1,71 @@
-function submission()
-var dd = parseInt(document.getElementById("day").value);
-var mm = parseInt(document.grtElementById("month").value);
-var yy = parseInt(document.getElementById("year").value);
-var male = parseInt(document.getElementById("malegender"));
-var male = parseInt(document.getElementById("femalegender"));
+function submission() {
+  var day = document.getElementById("day").value;
 
-var malegender = document.getElementById("malegender");
-var femalegender = document.getElementById("femalegender");
+  var dd = parseInt(day);
 
-var date = new Date(yy + "/" + mm + "/" + dd);
-var result = date.getDay();
+  var month = document.getElementById("month").value;
 
-var maleNames = [
-  "Kwasi",
-  "Kwadwo",
-  "Kwabena",
-  "Kwaku",
-  "Yaw",
-  "Kofi",
-  "Kwame"
-];
-var femaleNames = [
-  "Akosua",
-  " Adwoa",
-  "Abenaa",
-  "Akua",
-  "Yaa",
-  "Afua",
-  "Ama"];
-   
-  var days = [
+  var mm = parseInt(month);
+
+  var year = document.getElementById("year").value;
+
+  var yy = parseInt(year.toString().slice(2, 4));
+
+  var cc = Math.ceil(year / 100);
+
+  var male = document.getElementById("male").checked;
+  var female = document.getElementById("female").checked;
+
+  var dayOfweek = new Date(yy + "/" + mm + "/" + dd);
+  var result = dayOfweek.getDay();
+
+  var maleNames = [
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame"
+  ];
+  var femaleNames = [
+    "Akosua",
+    " Adwoa",
+    "Abenaa",
+    "Akua",
+    "Yaa",
+    "Afua",
+    "Ama"
+  ];
+  var daysOfTheWeek = [
     "Sunday",
     "Monday",
-    "Teusday",
+    "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday"
   ];
-
-  if (malegender.checked){
-    alert("Your Akan name result is " + maleNames[result] + "you were born on" + days[result]);
+  if (document.getElementById("gender").checked) {
+    var gender = "male";
+  } else {
+    var gender = "female";
   }
- 
-  else  {alert("Your Akan name result is " + femaleNames[result] + "you were born on" + days[result]);
+  if (dd <= 0 || dd > 31) {
+    alert("invalid date");
+  } else if (mm <= 0 || mm > 12) {
+    alert("invalid month");
+  } else if (mm == 2 && dd > 29) {
+    alert("invalid day of month");
+  }
+
+  if (male == true) {
+    var dayName = daysOfTheWeek[result];
+    var akan_name = maleNames[result];
+    alert("Your name is " + akan_name + "and you were born on a " + dayName);
+  } else if (female == true) {
+    var dayName = daysOfTheWeek[result];
+    var akan_name = femaleNames[result];
+    alert("Your name is " + akan_name + "and you were born on a " + dayName);
+  }
 }
-
-
-  
-  
-
