@@ -43,4 +43,6 @@ Twitter: @justusmo
 
 ## Contact
 
-0714244366s
+0714244366
+
+email: justusm10@gmail.com
