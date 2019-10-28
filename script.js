@@ -46,18 +46,7 @@ function submission() {
     "Friday",
     "Saturday"
   ];
-  // if (document.getElementById("gender").checked) {
-  //   var gender = "male";
-  // } else {
-  //   var gender = "female";
-  // }
-  // if (dd <= 0 || dd > 31) {
-  //   alert("invalid date");
-  // } else if (mm <= 0 || mm > 12) {
-  //   alert("invalid month");
-  // } else if (mm == 2 && dd > 29) {
-  //   alert("invalid day of month");
-  // }
+ 
 
   if (male == true) {
     var dayName = daysOfTheWeek[result];
