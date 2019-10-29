@@ -7,32 +7,32 @@ body {
 .jumbotron {
   background: transparent;
 }
+
 h1 {
   color: black;
   font-size: 80px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 80%;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 20%;
   padding: 50px;
-
   box-shadow: 3px 3px 10px 3px black;
 }
+
 p {
   color: black;
   font-size: 30px;
 }
-.content {
-  text-align: center;
-  background: rgba(255, 0, 0, 0.2);
 
+.content {
+  background: rgba(255, 0, 0, 0.4);
   padding: 40px;
   border-radius: 15%;
   box-shadow: 3px 3px 10px 3px black;
 }
 
-.f-content {
+.fcontent {
   text-align: center;
-  background: rgba(255, 0, 0, 0.2);
+  background: rgba(255, 0, 0, 0.4);
   font-size: 30px;
   padding: 30px;
   border-radius: 15%;
@@ -44,4 +44,26 @@ p {
 #year {
   border-radius: 30px;
   text-align: center;
+}
+.sbmt {
+  transition: transform 0.2s;
+}
+.sbmt:hover {
+  transform: scale(2.5);
+}
+
+#female {
+  transition: transform 0.2s;
+}
+
+#female:hover {
+  transform: scale(3);
+}
+
+#male {
+  transition: transform 0.2s;
+}
+
+#male:hover {
+  transform: scale(3);
 }

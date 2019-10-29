@@ -14,9 +14,11 @@ function submission() {
   var cc = Math.ceil(year / 100);
 
   var male = document.getElementById("male").checked;
+
   var female = document.getElementById("female").checked;
 
   var dayOfweek = new Date(yy + "/" + mm + "/" + dd);
+
   var result = dayOfweek.getDay();
 
   var maleNames = [
@@ -46,15 +48,18 @@ function submission() {
     "Friday",
     "Saturday"
   ];
- 
 
   if (male == true) {
     var dayName = daysOfTheWeek[result];
+
     var akan_name = maleNames[result];
+
     alert("Your name is " + akan_name + "and you were born on a " + dayName);
   } else if (female == true) {
     var dayName = daysOfTheWeek[result];
+
     var akan_name = femaleNames[result];
+
     alert("Your name is " + akan_name + "and you were born on a " + dayName);
   }
 }
