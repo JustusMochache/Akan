@@ -49,7 +49,11 @@ function submission() {
     "Saturday"
   ];
 
-  if (male == true) {
+  if (dd <= 0 || dd > 31) {
+    alert("Enter valid day");
+  } else if (mm <= 0 || mm > 12) {
+    alert("Please enter a valid month");
+  } else if (male == true) {
     var dayName = daysOfTheWeek[result];
 
     var akan_name = maleNames[result];
