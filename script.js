@@ -9,9 +9,9 @@ function submission() {
 
   var year = document.getElementById("year").value;
 
-  var yy = parseInt(year.toString().slice(2, 4));
+  var yy = parseInt(year);
 
-  var cc = Math.ceil(year / 100);
+  // var cc = Math.ceil(year / 100);
 
   var male = document.getElementById("male").checked;
 
@@ -64,12 +64,12 @@ function submission() {
 
     var akan_name = maleNames[result];
 
-    alert("Your name is " + akan_name + "and you were born on a " + dayName);
+    alert("Your name is " + akan_name + " and you were born on a " + dayName);
   } else if (female == true) {
     var dayName = daysOfTheWeek[result];
 
     var akan_name = femaleNames[result];
 
-    alert("Your name is " + akan_name + "and you were born on a " + dayName);
+    alert("Your name is " + akan_name + " and you were born on a " + dayName);
   }
 }
