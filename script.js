@@ -53,6 +53,12 @@ function submission() {
     alert("Enter valid day");
   } else if (mm <= 0 || mm > 12) {
     alert("Please enter a valid month");
+  } else if (day == "") {
+    alert("Please enter date");
+  } else if (month == "") {
+    alert("Please enter month");
+  } else if (year == "") {
+    alert("Please enter Year");
   } else if (male == true) {
     var dayName = daysOfTheWeek[result];
 
