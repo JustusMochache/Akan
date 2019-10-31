@@ -24,7 +24,7 @@ p {
 }
 
 .content {
-  background: rgba(255, 0, 0, 0.4);
+  background: rgba(255, 0, 0, 0.5);
   padding: 40px;
   border-radius: 15%;
   box-shadow: 3px 3px 10px 3px black;
@@ -32,7 +32,7 @@ p {
 
 .fcontent {
   text-align: center;
-  background: rgba(255, 0, 0, 0.4);
+  background: rgba(255, 0, 0, 0.5);
   font-size: 30px;
   padding: 30px;
   border-radius: 15%;
@@ -52,11 +52,11 @@ p {
   transform: scale(2.5);
 }
 
-#female {
+#dot {
   transition: transform 0.2s;
 }
 
-#female:hover {
+#dot:hover {
   transform: scale(3);
 }
 
@@ -66,4 +66,9 @@ p {
 
 #male:hover {
   transform: scale(3);
+}
+
+#alert {
+  color: white;
+  border-radius: 20%;
 }

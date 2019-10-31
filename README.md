@@ -34,7 +34,7 @@ This website application that generates Akan names according to the birthdate by
 
 ---
 
-## BDD
+## Bday
 
 <img src="images/screenshot.png" alt="picture">
  

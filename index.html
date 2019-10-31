@@ -21,8 +21,9 @@
       <div class="jumbotron">
         <h1>Akan Names Generator</h1>
       </div>
-    </div>
-    <div class="container">
+
+      
+    
       <div class="row">
         <div class="col-md-6">
           <div class="content">
@@ -46,19 +47,46 @@
         </div>
 
         <div class="col-md-6">
+          
           <div class="fcontent">
+
+            <form id="myForm" submit="return false">
             <div class="form">
               <label>Day</label><br />
-              <input type="text" id="day" placeholder="dd" required /><br />
+              <input
+                type="number"
+                id="day"
+                min="1"
+                max="31"
+                maxlenght="2"
+                placeholder="day"
+                required
+              /><br />
               <label>Month</label><br />
-              <input type="text" id="month" placeholder="mm" required /><br />
+              <input
+                type="number"
+                id="month"
+                max="12"
+                min="1"
+                maxlenght="2"
+                placeholder="month"
+                required
+              /><br />
               <label>Year</label><br />
-              <input type="text" id="year" placeholder="yy" required /><br />
+              <input
+                type="number"
+                id="year"
+                min="1900"
+                max="2019"
+                maxlength="4"
+                placeholder="year"
+                required
+              /><br />
               <label>Gender</label><br />
               <input
                 type="radio"
                 name="gender"
-                id="male"
+                id="dot"
                 value="male"
                 checked
               />
@@ -66,9 +94,9 @@
               <input
                 type="radio"
                 name="gender"
-                id="female"
+                id="dot"
                 value="female"
-                checked
+                
               />
               Female<br /><br />
             </div>
@@ -83,14 +111,20 @@
                   Submit
                 </button></a
               >
-              <div id="last">
-                <p id="show"></p>
-              </div>
+
+            </form>
+              
             </div>
           </div>
+<h3 id="alert" class="jumbotron alert alert-success">
+
+          </h3>
+          
         </div>
-      </div>
-    </div>
+
+        
+   </div>
+    
     <script src="./script.js"></script>
   </body>
 </html>
